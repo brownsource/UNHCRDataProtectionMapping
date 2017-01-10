@@ -1,5 +1,5 @@
 ################################################################################
-OutputCSV <- function(country.Data, country.Name){
+OutputCSV <- function(country.Data, country.Name, filepath){
         
         # Saves a CSV of Partner information for that country of the iGraph Object
         # 
@@ -23,7 +23,7 @@ OutputCSV <- function(country.Data, country.Name){
         )
 
         # Set the output directory
-        output.Path <- "../private/output/RegionalPartnerMapping/"
+        output.Path <- filepath
         filename.Path <- paste(output.Path, country.Name, ".csv", sep = "")
         dir.create(dirname(filename.Path), showWarnings = FALSE)
         

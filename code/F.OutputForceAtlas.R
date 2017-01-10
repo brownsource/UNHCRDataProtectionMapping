@@ -1,6 +1,6 @@
 ################################################################################
 OutputForceAtlas <- function(graph, graph.Name, graph.Layout, graph.Labels = TRUE, 
-                             highlight.DSA = "No", node.Scale = 1) {
+                             highlight.DSA = "No", node.Scale = 1, filepath) {
 
         # Saves a PNG of the iGraph Object
         # 
@@ -74,7 +74,7 @@ OutputForceAtlas <- function(graph, graph.Name, graph.Layout, graph.Labels = TRU
         } else {}
               
         # Set the output directory
-        output.Path <- "../private/output/RegionalPartnerMapping/"
+        output.Path <- filepath
         if (graph.Labels == TRUE) {
                 filename.Path <- paste(output.Path, graph.Name, "_labels.png", sep = "")
         } else {

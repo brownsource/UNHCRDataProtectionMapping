@@ -78,14 +78,30 @@ regional.Graphs.Outputs   <- c("Regional_Partners_All",
 source("code/F.OutputForceAtlas.R")
 
 # Regional
-OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[1], all.Graphs.Layouts[[1]], graph.Labels = TRUE, highlight.DSA = "No", node.Scale = 1)
-OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[1], all.Graphs.Layouts[[1]], graph.Labels = FALSE, highlight.DSA = "No", node.Scale = 1)
-OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[2], all.Graphs.Layouts[[1]], graph.Labels = TRUE, highlight.DSA = "All", node.Scale = 1)
-OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[2], all.Graphs.Layouts[[1]], graph.Labels = FALSE, highlight.DSA = "All", node.Scale = 1)
-OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[3], all.Graphs.Layouts[[1]], graph.Labels = TRUE, highlight.DSA = "Jordan", node.Scale = 1)
-OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[3], all.Graphs.Layouts[[1]], graph.Labels = FALSE, highlight.DSA = "Jordan", node.Scale = 1)
-OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[4], all.Graphs.Layouts[[1]], graph.Labels = TRUE, highlight.DSA = "Lebanon", node.Scale = 1)
-OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[4], all.Graphs.Layouts[[1]], graph.Labels = FALSE, highlight.DSA = "Lebanon", node.Scale = 1)
+OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[1], all.Graphs.Layouts[[1]], 
+                 graph.Labels = TRUE, highlight.DSA = "No", node.Scale = 1, 
+                 "../private/output/RegionalPartnerMapping/")
+OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[1], all.Graphs.Layouts[[1]], 
+                 graph.Labels = FALSE, highlight.DSA = "No", node.Scale = 1, 
+                 "../private/output/RegionalPartnerMapping/")
+OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[2], all.Graphs.Layouts[[1]], 
+                 graph.Labels = TRUE, highlight.DSA = "All", node.Scale = 1, 
+                 "../private/output/RegionalPartnerMapping/")
+OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[2], all.Graphs.Layouts[[1]], 
+                 graph.Labels = FALSE, highlight.DSA = "All", node.Scale = 1, 
+                 "../private/output/RegionalPartnerMapping/")
+OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[3], all.Graphs.Layouts[[1]], 
+                 graph.Labels = TRUE, highlight.DSA = "Jordan", node.Scale = 1, 
+                 "../private/output/RegionalPartnerMapping/")
+OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[3], all.Graphs.Layouts[[1]], 
+                 graph.Labels = FALSE, highlight.DSA = "Jordan", node.Scale = 1, 
+                 "../private/output/RegionalPartnerMapping/")
+OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[4], all.Graphs.Layouts[[1]], 
+                 graph.Labels = TRUE, highlight.DSA = "Lebanon", node.Scale = 1, 
+                 "../private/output/RegionalPartnerMapping/")
+OutputForceAtlas(graph.Regional.Partners, regional.Graphs.Outputs[4], all.Graphs.Layouts[[1]], 
+                 graph.Labels = FALSE, highlight.DSA = "Lebanon", node.Scale = 1, 
+                 "../private/output/RegionalPartnerMapping/")
 
 # Create bar chart of types
 Type <- factor(import.Nodes[,"type"])
